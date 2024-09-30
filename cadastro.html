@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styleCadastro.css">
+  <title>Pagamento com Cartão de Crédito</title>
+</head>
+
+<body>
+
+  <div class="payment-container">
+    <div class="payment-header">Cadastro Cartão de Crédito ou Débito</div>
+
+    <div id="feedback"></div>
+
+    <div class="form-group">
+      <label for="cardNumber">Número do Cartão</label>
+      <input type="text" id="cardNumber" placeholder="•••• •••• •••• ••••" maxlength="19" oninput="formatarNumeroCartao(this)">
+    </div>
+
+    <div class="form-group">
+      <label for="cardName">Nome no Cartão</label>
+      <input type="text" id="cardName" placeholder="Nome Sobrenome">
+    </div>
+
+    <div class="form-group-half">
+      <label for="expiryDate">Data de Validade</label>
+      <input type="month" id="expiryDate">
+    </div>
+
+    <div class="form-group-half">
+      <label for="csv">Código CSV</label>
+      <input type="text" id="csv" placeholder="•••">
+      <span class="csv-info">?</span>
+    </div>
+
+    <button class="submit-btn" onclick="enviarPagamento()">Finalizar Cadastro</button>
+  </div>
+
+  <script src="cadastroScript.js"></script>
+
+</body>
+
+</html>

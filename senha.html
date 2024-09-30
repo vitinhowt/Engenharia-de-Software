@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alteração de senha</title>
+    <link rel="stylesheet" href="styleSenha.css">
+</head>
+<body>
+    <div class="container">
+        <h3>Insira a senha nova abaixo</h3>
+        <h4>A senha não pode conter caracteres especiais</h4>
+        <h6>EX: "@", "&" etc.</h6>
+        <input type="password" id="senha" />
+        <button onclick="mostrar()">Mostrar senha</button>
+        <h4>Insira a senha novamente</h4>
+        <input type="password" id="senhaConfirmada" />
+        <button onclick="mostrar2()">Mostrar senha</button>
+        <br>
+        <button onclick="redefinir()">REDEFINIR</button>
+        <div id="resposta"></div>
+    </div>
+    <script src="senhaScript.js"></script>
+</body>
+</html>

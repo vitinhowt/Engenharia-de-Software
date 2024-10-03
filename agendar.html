@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="agendar.css">
+    <title>Agendar Corrida</title>
+</head>
+<body>
+    <div class="principal">
+        <h1>Agendar Corrida</h1>
+        <label for="pickup">Local de Partida:</label>
+        <input type="text" id="pickup" placeholder="Digite o local de partida" required>
+
+        <label for="destination">Destino:</label>
+        <input type="text" id="destination" placeholder="Digite o destino" required>
+
+        <label for="date">Data:</label>
+        <input type="date" id="date" required>
+
+        <label for="time">Horário:</label>
+        <input type="time" id="time" required>
+
+        <button id="scheduleButton">Agendar Corrida</button>
+        <div id="errorContainer" class="error"></div>
+        <div id="rideInfo"></div>
+    </div>
+
+    <script src="agendar.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação do Motorista</title>
+    <link rel="stylesheet" href="../Css/avMoto.css">
+</head>
+
+<body>
+    <div class="principal">
+        <div class="div-imagem-motorista">
+            <img src="urlFotoMoto.jpg" alt="Foto de Motorista" id="motoristaFoto">
+        </div>
+        <div class="instrucao">
+            <h3>Avalie sua viagem com <span id="motoristaNome"></span></h3>
+        </div>
+        <div class="avaliacao-estrelas" id="estrelas">
+            <!-- Estrelas serão inseridas aqui pelo JavaScript -->
+        </div>
+        <div class="motivos-av-ruim" id="motivosContainer">
+            <p>Selecione um ou mais motivos</p>
+            <!-- Motivos serão inseridos aqui pelo JavaScript -->
+        </div>
+        <button id="enviarBtn">Enviar Avaliação</button>
+        <div id="errorContainer"></div>
+        <a href="../Html/Historico.html">Histórico de corridas</a>
+    </div>
+    <script src="../Js/avMoto.js"></script>
+</body>
+
+</html>

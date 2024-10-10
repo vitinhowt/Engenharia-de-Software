@@ -9,7 +9,7 @@ document.getElementById('requestRide').addEventListener('click', function() {
         if (origin !== destination) {
             messageDiv.textContent = `Corrida solicitada de ${origin} para ${destination}.`;
             messageDiv.style.color = '#28a745'; // Cor de sucesso
-            document.getElementById("resposta").innerHTML = "<a href='transporte.html'>prosseguir para escolha do serviço.</a>"
+            document.getElementById("resposta").innerHTML = "<a href='../Html/transporte.html'>prosseguir para escolha do serviço.</a>"
         } else {
             messageDiv.textContent = 'A origem e o destino não podem ser iguais.';
             messageDiv.style.color = '#d9534f'; // Cor de erro

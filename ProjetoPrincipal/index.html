@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro e Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro</h1>
+        <div id="signup-form">
+            <input type="text" id="signup-username" placeholder="Usuário" required>
+            <input type="password" id="signup-password" placeholder="Senha" required>
+            <button onclick="handleSignup()">Cadastrar</button>
+            <p id="signup-message"></p>
+        </div>
+
+        <div id="login-form" style="display:none;">
+            <h1>Login</h1>
+            <input type="text" id="username" placeholder="Usuário" required>
+            <input type="password" id="password" placeholder="Senha" required>
+            <button onclick="handleLogin()">Entrar</button>
+            <p id="message"></p>
+        </div>
+
+        <div id="verification-form" style="display:none;">
+            <h1>Verificação</h1>
+            <input type="text" id="verification-code" placeholder="Código de Verificação" required>
+            <button onclick="handleVerification()">Verificar</button>
+            <p id="verification-message"></p>
+            <div id="redirect-buttons" style="display:none;">
+                <button onclick="redirectToPage1()"> Página do Usuário </button>
+                <button onclick="redirectToPage2()"> Página do Motorista </button>
+            </div>
+        </div>
+    <script src="script.js"></script> 
+</body>
+</html>

@@ -43,6 +43,6 @@ function Comfort(){
 }
 
 function voltar(){
-    window.location.href = "transporte.html";
+    window.location.href = "../Html/transporte.html";
 
 }
